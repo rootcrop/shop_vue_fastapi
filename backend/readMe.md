@@ -1,5 +1,4 @@
-
-подготовка
+preparation подготовка
 	D:\work\fastAPI_shop\backend> 
 	python -m venv myvenv
 	#source myvenv/bin/activate	# .\venv\Scripts\Activate.ps1
@@ -14,8 +13,7 @@ backend
 		service
 		sheme
 		
-	app			весь бэкэнд хранится тут
-	
+app			весь бэкэнд хранится тут
 		__init__.py	инициализация проекта	#touch __init__.py  #notepad __init__.py
 
 		models	описание моделей 
@@ -46,9 +44,15 @@ backend
 	requirements.txt
 		
 git	D:\work\fastAPI_shop> 
-	git init
-		Initialized empty Git repository in D:/work/fastAPI_shop/.git/
-	fastAPI_shop> git add .
+	git init	# Initialized empty Git repository in D:/work/fastAPI_shop/.git/
+	git add .
 	
+	в github.com создаем новый репозиторий shop_vue_fastapi
+	git remote add origin https://github.com/rootcrop/shop_vue_fastapi.git
+	git branch -M main
+	git commit -m 'init'
+	git push -u origin main
+
+
 
 	

@@ -14,11 +14,11 @@ class Settings(BaseSettings):
     static_dir: str="static"
     images_dir: str="static/images"
 
-    class Config:                   # значения настроек можно переопределить из файла .env в корне проекта
-        env_file=".env"
+class Config:                       # значения настроек можно переопределить из файла .env в корне проекта
+    env_file=".env"
 
 settings = Settings ()              # инициализируем_создаем экземпляр, 
-                                    # чтобы эти настройки чтобы подтянуть позже, пример:
+                                    # чтобы эти настройки можно было подтянуть позже, пример:
 ''' 
                                     from app.config import settings
                                     print(settings.app_name)

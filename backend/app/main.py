@@ -41,7 +41,9 @@ def root():
 def health_check():
     return {'status': 'healthy'}
 
-# 
-# \work\fastAPI_shop\backend> .\venv\Scripts\Activate.ps1
-# python run.py              # uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload 
-#
+###
+# запуск 
+###
+# source venv/bin/activate                                      # для линукс
+# venv\Scripts\Activate.ps1                                     # для windows
+# uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload      # или python run.py

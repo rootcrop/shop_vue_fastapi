@@ -18,4 +18,4 @@ class CategoryResponse(CategoryBase):  # id нужно для вывода де�
     id: int = Field(..., description="Unique catyegory identifier")
 
     class Config:
-        form_attributes = True  # можно создавать схему напрямую из модели
+        from_attributes = True  # можно создавать схему напрямую из модели

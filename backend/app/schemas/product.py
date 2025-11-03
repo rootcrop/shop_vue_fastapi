@@ -34,7 +34,7 @@ class ProductResponse(BaseModel):
     # CategoryResponse взяли из from .category import CategoryResponse
 
     class Config:
-        form_attributes = True  # можно создавать схему напрямую из модели
+        from_attributes = True  # можно создавать схему напрямую из модели
 
 
 class ProductListResponse(BaseModel):  # класс вывода продуктов

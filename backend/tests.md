@@ -6,7 +6,7 @@
 cd backend\
 pip install -r requirements.txt\
 source venv/bin/activate #linux\
-\venv\Scripts\Activate.ps1 #windows\
+\venv\Scripts\Activate.ps1 #windows
 
 ## Заполнение базы данных тестовыми данными
 
@@ -27,25 +27,24 @@ uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
 ## Тестирование эндпоинтов postman
 
 ### Health Check
-
-Проверка работоспособности сервера
-    GET  http://localhost:8000/health
-в body корректный ответ:
-    {    "status": "healthy" }
-
-в postman scripts добавляем
-pm.test("Status code is 200", function () {
-    pm.response.to.have.status(200);
-});
-
-pm.test("Status is healthy", function () {
-    var jsonData = pm.response.json();
-    pm.expect(jsonData.status).to.eql("healthy");
-});
-
-корректный ответ postman tab / test result:
-    passed, Status code is 200
-    passed, Status is healthy
+Проверка работоспособности сервера  
+    GET  http://localhost:8000/health  
+в body корректный ответ:  
+    {    "status": "healthy" }  
+  
+в postman scripts добавляем  
+pm.test("Status code is 200", function () {  
+    pm.response.to.have.status(200);  
+});  
+  
+pm.test("Status is healthy", function () {  
+    var jsonData = pm.response.json();  
+    pm.expect(jsonData.status).to.eql("healthy");  
+});  
+  
+корректный ответ postman tab / test result:  
+    passed, Status code is 200  
+    passed, Status is healthy  
 
 ### Категории (Categories)
 

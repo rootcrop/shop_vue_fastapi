@@ -1,5 +1,5 @@
 ## preparation подготовка
-  D:\work\fastAPI_shop\backend>  
+  work\fastAPI_shop\backend>  
   python -m venv myvenv  
   #source myvenv/bin/activate  # .\venv\Scripts\Activate.ps1  
   pip install fastapi uvicorn sqlalchemy pydantic python-dotenv pydantic-settings  
@@ -13,7 +13,7 @@
     service  
     sheme  
 
-## app      весь бэкэнд хранится тут
+## app      бэкэнд
     __init__.py  инициализация проекта  #touch __init__.py  #notepad __init__.py   
     models  описание моделей   
         продукт: название, описание, категория, дата   
@@ -112,9 +112,11 @@ cd frontend
 npm install         # устанавливает нужные библиотеки
 npm install axios   # для общения с frontend ставим 
 
-npm run format  
-npm run dev  
+backend
+python run.py # запускаем бэкэнд
 
-| Optional: Initialize Git in your project directory with:  
-   git init && git add -A && git commit -m "initial commit"  
+frontend
+npm run dev  # в другом терминали запускаем бэкэнд
+
+# site running on http://localhost:5173/
 

@@ -2,11 +2,11 @@
 
 ## Запуск бэкенда
 
-Установка зависимостей
-cd backend
-pip install -r requirements.txt
-source venv/bin/activate #linux
-\venv\Scripts\Activate.ps1 #windows
+Установка зависимостей\
+cd backend\
+pip install -r requirements.txt\
+source venv/bin/activate #linux\
+\venv\Scripts\Activate.ps1 #windows\
 
 ## Заполнение базы данных тестовыми данными
 
